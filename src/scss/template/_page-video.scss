@@ -1,0 +1,150 @@
+.watch-sidebar-body{
+  .video-list{
+    .video-list-item{
+      .content-wrapper{
+        a{
+          .title{
+            color: darken($text-color,45%) !important;
+          }
+          span:not(.title){
+            color: darken($text-color,55%) !important
+          }
+          .yt-badge-list{
+            .yt-badge-item{
+              .yt-badge{
+                border: 0;
+                color: darken($youtube-red,15%) !important;
+                transition: 0.2s ease-out;
+              }
+            }
+          }
+        }
+      }
+      .thumb-wrapper{
+        opacity: 0.4;
+        transition: 0.2s ease-out;
+      }
+      &:hover{
+        .content-wrapper{
+          a{
+            .title{
+              color: $text-color !important;
+            }
+            span:not(.title){
+              color: darken($text-color,20%) !important
+            }
+            .yt-badge-list{
+              .yt-badge-item{
+                .yt-badge{
+                  border: 0;
+                  color: lighten($youtube-red,10%) !important;
+                }
+              }
+            }
+          }
+        }
+        .thumb-wrapper{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+.yt-card .yt-uix-button-expander{
+  color: $text-color
+}
+
+.watch-sidebar-separation-line{
+  border-bottom: $card-border !important;
+}
+
+#content{
+  .yt-thumb.comment-author-thumbnail,
+  .yt-thumb.comment-author-thumbnail{
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #action-panel-details{
+    a{
+      color: $link-color;
+      &:hover{
+        color: $link-color-hover
+      }
+    }
+    #watch-uploader-info{
+      .watch-time-text{
+        color: darken($text-color,10%);
+      }
+    }
+    .yt-uix-button{
+      border-top: $card-border;
+    }
+  }
+  #watch-discussion{
+    .comment-simplebox-renderer{
+      .comment-simplebox{
+        background-color: $card-background;
+        .comment-simplebox-arrow{
+          .arrow-inner{
+
+          }
+        }
+        .comment-simplebox-frame{
+          background-color: #ffffff;
+        }
+      }
+    }
+    .comment-simplebox-renderer-collapsed-content{
+      background-color: #ffffff;
+    }
+    .comment-renderer{
+      .comment-renderer-content{
+        .comment-renderer-text{
+          .spf-link{
+            color: $link-color;
+          }
+        }
+        .comment-renderer-footer{
+          .comment-simplebox{
+            background-color: transparent;
+            .comment-simplebox-frame{
+              background-color: #ffffff;
+            }
+          }
+          .comment-action-buttons-toolbar{
+            .yt-uix-button{
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  #watch-header{
+    .yt-thumb{
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .watch-action-buttons{
+      border-top: $card-border;
+      .yt-uix-button{
+        color: $text-color;
+        opacity: 0.8;
+        &:hover{
+          color: $text-color-hover;
+          opacity: 1;
+        }
+      }
+      #watch7-views-info{
+        .video-extras-sparkbar-likes{
+          background-color: darken($link-color,20%)
+        }
+        .video-extras-sparkbar-dislikes{
+          background-color: darken($youtube-red,10%);
+        }
+      }
+    }
+  }
+}

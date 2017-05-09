@@ -1,0 +1,263 @@
+body{
+  background-color: $card-background !important;
+}
+#body-container{
+
+  background-color: $background !important;
+
+  #page{
+    background-color: $background !important
+  }
+
+  #yt-masthead-container{
+    background-color: $card-background !important;
+    border-bottom: $card-border !important;
+    //padding-bottom: 6px;
+    //padding-top: 9px;
+  }
+
+  .yt-card{
+    background-color: $card-background;
+    .yt-uix-button-expander{
+      border-top: $card-border;
+    }
+    .yt-ui-ellipsis{
+      background-color: $card-background;
+    }
+    .branded-page-box{
+      border-bottom: $card-border;
+      padding: 18px;
+    }
+    .branded-page-module-title{
+      padding-bottom: 15px;
+      .yt-thumb{
+        border-radius: 50%;
+        margin-right: 10px;
+        .yt-thumb-simple img{
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .branded-page-module-title-text{
+        color: $text-color-lighter;
+      }
+    }
+    .shelf-annotation{
+      &.shelf-title-annotation{
+        background-color: transparent;
+        color: $text-color-lighter;
+        text-transform: uppercase;
+        font-size: 9px;
+        letter-spacing: 0.08em;
+        padding: 0 6px;
+        margin-left: 4px;
+        border-radius: 3px;
+        a{
+          color: $text-color-lighter;
+          &:hover{
+            color: $text-color-hover;
+          }
+        }
+      }
+    }
+
+    // Video card
+    .yt-lockup-video{
+      .yt-lockup-content{
+        .yt-lockup-byline a{
+          color: $text-color;
+        }
+        .yt-lockup-meta{
+          .yt-lockup-meta-info{
+            li{
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #masthead-appbar{
+    background-color: $background !important;
+    border-bottom: 0;
+    .appbar-nav-menu{
+      padding-top: 4px;
+      .epic-nav-item-heading[aria-selected=true]{
+        background-color: $card-background;
+        border-bottom: 0;
+        color: $text-color;
+        font-weight: 400;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+        &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 4px;
+          left: 4px;
+          right: 4px;
+          height: 2px;
+          background: $youtube-red;
+        }
+      }
+    }
+  }
+
+  .yt-uix-expander-ellipsis{
+    background-color: transparent;
+  }
+
+  // Logo
+
+  .yt-masthead-logo-container{
+    //margin-top: 7px !important;
+  }
+
+  // Search
+  #masthead-search{
+
+    #masthead-search-terms{
+      background-color: transparent !important;
+      border: $card-border !important;
+      border-radius: 10px !important;
+      box-shadow: none !important;
+      //height: 40px !important;
+      //line-height: 41px !important;
+      overflow: visible !important;
+      #masthead-search-term{
+        background-color: $background !important;
+        border-radius: 10px !important;
+        color: $text-color-lighter;
+        padding-left: 15px !important;
+        &:focus ~ .search-button{
+          opacity: 1;
+        }
+      }
+    }
+
+    .search-button{
+      background-color: $background !important;
+      border-radius: 0 10px 10px 0 !important;
+      border: none !important;
+      box-shadow: none !important;
+      //height: 40px !important;
+      //line-height: 44px !important;
+      margin-left: -65px;
+      position:relative;
+      z-index:5000;
+      .yt-uix-button-content{
+
+      }
+    }
+  }
+
+  .gssb_m{
+    background-color: $card-background !important;
+  }
+
+  // Header icons
+  #yt-masthead-user{
+    button,
+    a,
+    .yt-uix-button-icon{
+    }
+    .yt-masthead-user-icon{
+      border: none;
+      box-shadow:0px 2px 4px #262627;
+      height: auto;
+      transform: none;
+      .yt-uix-button-content{
+        .yt-thumb{
+          background-color: $background;
+          //width: 40px
+        }
+      }
+    }
+    .yt-thumb-square{
+      img{
+        //width:40px;
+        //height:40px;
+      }
+    }
+  }
+
+  // Appbar
+  #appbar-guide-menu{
+    background-color: $card-background;
+    border-right: $card-border;
+    //margin-top: 61px;
+    #guide-container{
+      padding-left: 0!important;
+      padding-right: 0!important;
+      .display-name{
+        color: $text-color;
+        span{
+          color: $text-color;
+        }
+      }
+      .guide-count-value{
+        color: $text-color;
+      }
+      .guide-section-separator{
+        border-bottom: 1px solid #303338
+      }
+      .guide-item-container{
+        .guide-channel{
+          .guide-item{
+            box-sizing: border-box;
+            display: block;
+            padding: 0 15px;
+            width: 100%;
+            .guide-count,
+            .guide-badge-live{
+              right: 16px;
+            }
+          }
+          .guide-view-more{
+            padding-left: 50px;
+          }
+        }
+        #guide-subscriptions-section{
+          .yt-thumb{
+            border-radius: 50%;
+            overflow: hidden;
+            width: 30px;
+            img{
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Footer
+
+#footer-container{
+  background-color: $card-background !important;
+  border-top: $card-border!important;
+  #footer-main{
+    border-bottom: $card-border;
+  }
+  #footer-links{
+    a,
+    .copyright{
+      color: $text-color;
+      &:hover{
+        color: $text-color-hover;
+      }
+    }
+  }
+  #yt-picker-country-footer, #yt-picker-language-footer, #yt-picker-safetymode-footer{
+    background-color: lighten($card-background,5%) !important;
+    box-sizing: border-box;
+  }
+}
+
+.yt-picker-header{
+  border-bottom: $card-border;
+}

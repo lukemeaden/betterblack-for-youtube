@@ -1,0 +1,30 @@
+h1,
+h1 span,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p,
+#watch-header .yt-user-info a,
+.watch-view-count,
+.comment-renderer-text-content{
+  color: $text-color !important;
+}
+
+li{
+  color: $text-color
+}
+
+.yt-picker-grid{
+  > strong.yt-picker-item{
+    color: $text-color !important;
+  }
+  > button{
+    color: $link-color !important;
+    &:hover{
+      color: $link-color-hover !important;
+    }
+  }
+}

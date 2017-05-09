@@ -1,0 +1,24 @@
+.yt-uix-button-icon{
+  &.yt-uix-button-icon-dismissal{
+    background-image: none;
+    &:after{
+      content:'\f057';
+      color: $text-color;
+      display: block;
+      font-family: FontAwesome;
+      font-size: 14px;
+    }
+  }
+}
+.yt-uix-button-default:not(#yt-masthead-notifications-button,#yt-uix-load-more){
+  background-color: $button-background !important;
+  border: $button-border !important;
+  color: $text-color !important;
+  text-shadow: $button-text-shadow !important;
+  &.yt-uix-button-toggled,
+  &:hover{
+    background-color: lighten($button-background,12%) !important;
+    box-shadow: $button-shadow-hover !important;
+    color: $text-color-hover !important;
+  }
+}
